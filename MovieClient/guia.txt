@@ -1,0 +1,2 @@
+1. se debe crear una solucion web para el cliente en el cual podra visualizar las peliculas cargadas desde el sigoMovie
+2. el cliente pude interacutar con cada pelicula seleccionada

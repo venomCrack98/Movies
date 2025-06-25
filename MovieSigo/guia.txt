@@ -1,0 +1,3 @@
+1. se debe crear una solucion web donde se administre las peliculas en cartelera
+2. se debe ingresar nombre, imagen principal, trailer, duracion, genero, descripcion
+3. 
