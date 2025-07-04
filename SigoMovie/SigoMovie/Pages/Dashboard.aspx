@@ -1,0 +1,140 @@
+﻿<%@ Page Title="Dashboard" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Dashboard.aspx.cs" Inherits="SigoMovie.Pages.Dashboard" %>
+
+<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
+
+   <header class="d-flex justify-content-between align-items-center mb-5 pb-3 border-bottom">
+    <div class="d-flex align-items-center gap-3">
+        <i class="bi bi-film fs-1 text-primary"></i>
+        <h1 class="h3 fw-bold mb-0 text-primary">Panel de Administración</h1>
+    </div>
+
+</header>
+    <section class="row g-4 mb-5">
+    <div class="col-md-4">
+        <div class="card text-white bg-info shadow-sm h-100">
+            <div class="card-body text-center py-4">
+                <h2 class="fw-bold mb-0">250</h2>
+                <span>Total de Películas</span>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card text-white bg-success shadow-sm h-100">
+            <div class="card-body text-center py-4">
+                <h2 class="fw-bold mb-0">180</h2>
+                <span>Películas Activas</span>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card text-white bg-warning shadow-sm h-100">
+            <div class="card-body text-center py-4">
+                <h2 class="fw-bold mb-0">70</h2>
+                <span>Películas Inactivas</span>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- FORMULARIO PARA SUBIR PELÍCULA -->
+<section id="form" class="mb-5">
+    <div class="card shadow-sm">
+        <div class="card-header bg-primary bg-gradient text-white d-flex align-items-center">
+            <i class="bi bi-cloud-upload fs-5 me-2"></i>
+            <h5 class="mb-0">Subir nueva película</h5>
+        </div>
+        <div class="card-body">
+            <form>
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <label class="form-label">Título</label>
+                        <input type="text" class="form-control" placeholder="Ej: Avatar" />
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label">Género</label>
+                        <select class="form-select">
+                            <option disabled selected>Selecciona un género</option>
+                            <option>Acción</option>
+                            <option>Comedia</option>
+                            <option>Drama</option>
+                            <option>Animación</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label">Imagen (URL)</label>
+                        <input type="url" class="form-control" placeholder="https://..." />
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label">Enlace Video</label>
+                        <input type="url" class="form-control" placeholder="https://youtube.com/..." />
+                    </div>
+                    <div class="col-12">
+                        <label class="form-label">Descripción</label>
+                        <textarea class="form-control" rows="3"></textarea>
+                    </div>
+                    <div class="col-12 text-end">
+                        <button type="submit" class="btn btn-primary px-4">
+                            <i class="bi bi-save me-2"></i> Guardar
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- LISTADO DE PELÍCULAS -->
+<section id="listado" class="mb-5">
+    <div class="card shadow-sm">
+        <div class="card-header d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center">
+                <i class="bi bi-film fs-4 text-primary me-2"></i>
+                <h5 class="mb-0">Películas registradas</h5>
+            </div>
+            <button class="btn btn-sm btn-primary"><i class="bi bi-plus-lg me-1"></i>Agregar película</button>
+        </div>
+        <div class="table-responsive">
+            <table class="table table-hover align-middle mb-0">
+                <thead class="table-light">
+                    <tr>
+                        <th>#</th>
+                        <th>Título</th>
+                        <th>Género</th>
+                        <th>Imagen</th>
+                        <th>Estado</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Avatar</td>
+                        <td>Acción</td>
+                        <td>
+                            <img src="https://image.tmdb.org/t/p/w200/8YFL5QQVPy3AgrEQxNYVSgiPEbe.jpg" width="70" class="rounded shadow-sm" alt="Avatar" />
+                        </td>
+                        <td><span class="badge text-bg-success">Activa</span></td>
+                        <td>
+                            <button class="btn btn-sm btn-outline-primary me-1" title="Editar"><i class="bi bi-pencil-square"></i></button>
+                            <button class="btn btn-sm btn-outline-danger" title="Eliminar"><i class="bi bi-trash"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Pulp Fiction</td>
+                        <td>Crimen</td>
+                        <td>
+                            <img src="http://images2.fanpop.com/image/photos/13100000/Pulp-Fiction-pulp-fiction-13189249-1920-810.jpg" width="70" class="rounded shadow-sm" alt="Pulp Fiction" />
+                        </td>
+                        <td><span class="badge text-bg-warning">Inactiva</span></td>
+                        <td>
+                            <button class="btn btn-sm btn-outline-primary me-1" title="Editar"><i class="bi bi-pencil-square"></i></button>
+                            <button class="btn btn-sm btn-outline-danger" title="Eliminar"><i class="bi bi-trash"></i></button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+</asp:Content>               

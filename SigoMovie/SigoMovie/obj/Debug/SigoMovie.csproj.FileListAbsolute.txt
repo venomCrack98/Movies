@@ -69,7 +69,6 @@ D:\Users\Baki\Documents\proyectoMovie\Movies\SigoMovie\SigoMovie\bin\Microsoft.A
 D:\Users\Baki\Documents\proyectoMovie\Movies\SigoMovie\SigoMovie\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 D:\Users\Baki\Documents\proyectoMovie\Movies\SigoMovie\SigoMovie\bin\es\System.Web.Optimization.resources.dll
 D:\Users\Baki\Documents\proyectoMovie\Movies\SigoMovie\SigoMovie\bin\es\Microsoft.AspNet.FriendlyUrls.resources.dll
-D:\Users\Baki\Documents\proyectoMovie\Movies\SigoMovie\SigoMovie\obj\Debug\SigoMovie.csproj.AssemblyReference.cache
 D:\Users\Baki\Documents\proyectoMovie\Movies\SigoMovie\SigoMovie\obj\Debug\SigoMovie.csproj.CoreCompileInputs.cache
 D:\Users\Baki\Documents\proyectoMovie\Movies\SigoMovie\SigoMovie\obj\Debug\SigoMovie.csproj.CopyComplete
 D:\Users\Baki\Documents\proyectoMovie\Movies\SigoMovie\SigoMovie\obj\Debug\SigoMovie.dll

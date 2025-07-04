@@ -5,16 +5,13 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace SigoMovie
+namespace SigoMovie.Pages
 {
-    public partial class SiteMaster : MasterPage
+    public partial class Dashboard : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Page is SigoMovie.Pages.Login)
-            {
-                pnlMenu.Visible = false;
-            }
+
         }
     }
 }
